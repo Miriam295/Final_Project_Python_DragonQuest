@@ -2,7 +2,7 @@
 
 For my final project, I decided to create a text-based adventure game. 
 In the game, a player (the young knight) sets off on a journey to fight the white dragon, 
-and has to make decisions that will ultimately influence whether or not they have the money and skills to defeat the dragon. 
+and has to make decisions that will ultimately influence whether they have the money and skills to defeat the dragon. 
 
 Decisions in the game are made by entering "1" or "2" when having to make a choice. 
 To start the game, one has to run the code in "The Dragon Quest" file 
