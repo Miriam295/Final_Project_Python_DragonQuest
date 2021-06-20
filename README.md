@@ -13,3 +13,7 @@ Files overview:
 "The Dragon Quest" - Main Game
 "Dragon Support" - Code with all functions and classes
 "Requirements.txt" - Required versions
+
+
+GitHub Link to project:
+https://github.com/Miriam295/Final_Project_Python_DragonQuest
