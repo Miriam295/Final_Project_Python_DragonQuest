@@ -39,13 +39,20 @@ skill = Skills()
 money = Money()
 
 def choice():
-    options = [1,2]
-    time.sleep(2)
-    c = int(input("Choose 1 or 2: >> "))
-    if c not in options:
+    time.sleep(1)
+    while True:
+        try:
+            c = int(input("Choose 1 or 2: >> "))
+            break
+        except ValueError:
+            print("Invalid answer. Please enter number 1 or number 2.")
+            continue
+    if c not in [1, 2]:
         print("Invalid answer. Please enter 1 or 2.")
         choice()
-    return c
+    else:
+        return c
+
 
 def train():
     print("\nAfter years of hard training, you can now proudly call yourself a knight.")
@@ -114,6 +121,7 @@ def sea():
         print("\nYou are now exhausted but made it across.")
 
 def journey():
+    time.sleep(2)
     print("\nTo get to the dragon, you have two possible paths: Through the Forbidden Forest or across the Serpent Sea.")
     print("Choose wisely! 1: Forbidden Forest or 2: Serpent Sea ?")
     c = choice()
