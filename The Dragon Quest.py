@@ -8,5 +8,3 @@ print("\nWelcome to the kingdom of Pyland. We might need your help. Are you will
 print("Please select 1 to start the game, or 2 to exit.\n")
 
 Dragon_Support.start()
-
-Dragon_Support.play_again()

@@ -131,9 +131,9 @@ def journey():
         sea()
 
 def rest():
-    time.sleep(1)
+    time.sleep(2)
     print("\nYou continue the journey and suddenly, you are so close!\nIn the distance, you can see the white dragon's mountain and hear it roar.")
-    time.sleep(1)
+    time.sleep(2)
     print("\nYou are arriving at a clearing and enjoy your last hours before the fight.")
     print("What will you do before facing your destiny? 1 - Rest. 2 - Practice.")
     c = choice()
@@ -144,16 +144,17 @@ def rest():
 
 def dragon():
     print("\nWill you win, or be eaten by the dragon? Only one way to find out!")
-    time.sleep(1)
+    time.sleep(2)
     print("Your hands are shaking a bit but you keep going.")
-    time.sleep(1)
+    time.sleep(2)
     print("This is it! The dragon is right in front of you and turns to face you.")
-    time.sleep(1)
+    time.sleep(2)
     print("\nIt speaks! It makes you an offer: Instead of fighting you, it would take 100 gold coins to leave.")
-    time.sleep(1)
+    time.sleep(2)
     print("\nYou check your resources and skills level before deciding:")
     print(skill)
     print(money)
+    time.sleep(3)
     print("\nSo what will it be? 1 - Fight. 2 - Pay.")
     c = choice()
     if c == 1:
@@ -169,19 +170,19 @@ def dragon():
             time.sleep(1)
             print("You are sweating like crazy, but it's paying off - the dragon is slowly retreating!")
             time.sleep(1)
-            print("With one last roar, the dragon sets off. You saved the kingdom! Well done!")
+            print("\nWith one last roar, the dragon sets off. You saved the kingdom! Well done!")
     if c == 2:
         if money.count_money() < 100:
             print("\nFirst, the dragon is happily taking your coins. \nThis however changes fast when it notices you do not have enough!")
-            time.sleep(1)
+            time.sleep(2)
             print("The dragon takes a deep, angry inhale. You are starting to get worried.")
-            time.sleep(1)
+            time.sleep(2)
             print("Maybe you should have fought him instead, but now it's too late! The dragon shoots a giant flame at you, and you are dead.")
             print("\nYou lost. Game over.")
         else:
             print("\nMaybe this is not the most heroic way, but it works.")
             time.sleep(1)
-            print("With one last roar, the dragon sets off. You saved the kingdom! Well done!")
+            print("\nWith one last roar, the dragon sets off. You saved the kingdom! Well done!")
             print("Let's just hope no one ever finds out that you cheated your way out of this one.")
 
 def start():
@@ -191,14 +192,16 @@ def start():
     if c == 2:
         print("\nMaybe another time then, Pyland is looking forward to welcoming you again!")
 
+def play_again():
+    print("\nDo you want to play again?")
+    print("1 - Yes. 2 - No.")
+    start()
+
 def game_on():
     train()
     market()
     journey()
     rest()
     dragon()
+    play_again()
 
-def play_again():
-    print("\nDo you want to play again?")
-    print("1 - Yes. 2 - No.")
-    start()
