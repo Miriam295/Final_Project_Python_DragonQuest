@@ -8,6 +8,8 @@ Decisions in the game are made by entering "1" or "2" when having to make a choi
 To start the game, one has to run the code in "The Dragon Quest" file 
 and will then interact with the game via the choices presented.
 Testing the code happens while playing, no additional testing is required.
-The file "Dragon Support" contains all the functions and classes that make the game run. 
 
-The required packages can be found in the provided "requirements.txt" package. 
+Files overview:
+"The Dragon Quest" - Main Game
+"Dragon Support" - Code with all functions and classes
+"Requirements.txt" - Required versions
